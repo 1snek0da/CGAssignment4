@@ -42,6 +42,7 @@ const auto aspect_ratio = 16.0 / 9.0;
 const int gWidth = 800;
 const int gHeight = static_cast<int>(gWidth / aspect_ratio);
 const int samples_per_pixel = 100;
+const int max_depth = 50;
 
 void rendering();
 
@@ -59,13 +60,20 @@ double hit_sphere(const point3& center, double radius, const ray& r) {
 	}
 }
 
-color ray_color(const ray& r, const hittable& world) { 
+ color ray_color(const ray& r, const hittable& world, int depth) {
     hit_record rec; 
+ 
+    // If we've exceeded the ray bounce limit, no more light is gathered. 
+    if (depth <= 0) 
+        return color(0,0,0);
+ 
     if (world.hit(r, 0, infinity, rec)) { 
-        return 0.5 * (rec.normal + color(1,1,1)); 
+        point3 target = rec.p + rec.normal + random_in_unit_sphere();
+        return 0.5 * ray_color(ray(rec.p, target - rec.p), world, depth-1);
     } 
-    vec3 unit_direction = unit_vector(r.direction());
-    auto t = 0.5*(unit_direction.y() + 1.0);
+ 
+    vec3 unit_direction = unit_vector(r.direction()); 
+    auto t = 0.5*(unit_direction.y() + 1.0); 
     return (1.0-t)*color(1.0, 1.0, 1.0) + t*color(0.5, 0.7, 1.0); 
 } 
 
@@ -101,8 +109,7 @@ int main(int argc, char* args[])
 
 	return 0;
 }
- void write_color(int x,int y, color pixel_color, int samples_per_pixel)
- {
+void write_color(int x,int y, color pixel_color, int samples_per_pixel){
     // Out-of-range detection
     if (x < 0 || x >= gWidth)
     {
@@ -125,7 +132,7 @@ int main(int argc, char* args[])
     // Note: x -> the column number, y -> the row number
     // 将校正后的颜色写入 gCanvas
     gCanvas[y][x] = color(r,g,b);
- }
+}
 
 void rendering()
 {
@@ -162,7 +169,7 @@ void rendering()
                 auto u = (i + random_double()) / (image_width-1);
                 auto v = (j + random_double()) / (image_height-1);
                 ray r = cam.get_ray(u, v);
-                pixel_color += ray_color(r, world);
+                pixel_color += ray_color(r, world, max_depth);
             }
             write_color(i, j, pixel_color, samples_per_pixel);
 		}

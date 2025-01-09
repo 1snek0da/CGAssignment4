@@ -279,6 +279,8 @@ CMakeFiles/CGAssignment4.dir/src/WindowsApp.cpp.o: ../src/WindowsApp.cpp \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
   /usr/include/c++/11/iostream \
+  ../src/rtweekend.h \
+  /usr/include/c++/11/limits \
   /usr/include/c++/11/iomanip \
   /usr/include/c++/11/locale \
   /usr/include/c++/11/bits/locale_facets_nonio.h \
@@ -576,8 +578,8 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
-  ../src/ray.h \
   ../src/rtweekend.h \
+  ../src/ray.h \
   ../src/camera.h \
   ../src/color.h \
   ../src/hittable_list.h \
@@ -595,8 +597,6 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/c++/11/bits/parse_numbers.h:
 
-/usr/include/c++/11/limits:
-
 /usr/include/c++/11/ratio:
 
 /usr/include/c++/11/thread:
@@ -612,6 +612,8 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
+
+/usr/include/c++/11/limits:
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 

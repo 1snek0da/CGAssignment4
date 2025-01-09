@@ -1,7 +1,7 @@
 #ifndef CAMERA_H
- #define CAMERA_H
- #include "rtweekend.h"
- class camera {
+#define CAMERA_H
+#include "rtweekend.h"
+class camera {
     public:
         camera() {
             auto aspect_ratio = 16.0 / 9.0;
