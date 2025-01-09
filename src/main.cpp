@@ -29,6 +29,7 @@ THE SOFTWARE.*/
 #include "ray.h"
 #include "vec3.h"
 #include "rtweekend.h" 
+#include "camera.h"
  
 #include "color.h" 
 #include "hittable_list.h" 
@@ -40,6 +41,7 @@ static std::vector<std::vector<color>> gCanvas;		//Canvas
 const auto aspect_ratio = 16.0 / 9.0;
 const int gWidth = 800;
 const int gHeight = static_cast<int>(gWidth / aspect_ratio);
+const int samples_per_pixel = 100;
 
 void rendering();
 
@@ -99,26 +101,31 @@ int main(int argc, char* args[])
 
 	return 0;
 }
-
-void write_color(int x, int y, color pixel_color)
-{
-	// Out-of-range detection
-	if (x < 0 || x >= gWidth)
-	{
-		std::cerr << "Warnning: try to write the pixel out of range: (x,y) -> (" << x << "," << y << ")" << std::endl;
-		return;
-	}
-
-	if (y < 0 || y >= gHeight)
-	{
-		std::cerr << "Warnning: try to write the pixel out of range: (x,y) -> (" << x << "," << y << ")" << std::endl;
-		return;
-	}
-
-	// Note: x -> the column number, y -> the row number
-	gCanvas[y][x] = pixel_color;
-
-}
+ void write_color(int x,int y, color pixel_color, int samples_per_pixel)
+ {
+    // Out-of-range detection
+    if (x < 0 || x >= gWidth)
+    {
+        std::cerr << "Warnning: try to write the pixel out of range: (x,y) -> (" << x << "," << y << ")" << std::endl;
+        return;
+    }
+    if (y < 0 || y >= gHeight)
+    {
+        std::cerr << "Warnning: try to write the pixel out of range: (x,y) -> (" << x << "," << y << ")" << std::endl;
+        return;
+    }
+    auto r = pixel_color.x();
+    auto g = pixel_color.y();
+    auto b = pixel_color.z();
+    // Divide the color by the number of samples and gamma-correct for gamma = 2.0.
+    auto scale = 1.0 / samples_per_pixel;
+    r = sqrt(scale * r);
+    g = sqrt(scale * g);
+    b = sqrt(scale * b);
+    // Note: x -> the column number, y -> the row number
+    // 将校正后的颜色写入 gCanvas
+    gCanvas[y][x] = color(r,g,b);
+ }
 
 void rendering()
 {
@@ -140,15 +147,7 @@ void rendering()
 
  	// Camera 
  
-    auto viewport_height = 2.0; 
-    auto viewport_width = aspect_ratio * viewport_height; 
-    auto focal_length = 1.0; 
- 
-    auto origin = point3(0, 0, 0); 
-    auto horizontal = vec3(viewport_width, 0, 0); 
-    auto vertical = vec3(0, viewport_height, 0); 
-    auto lower_left_corner = origin - horizontal/2 - vertical/2 - vec3(0, 0, 
-focal_length);
+    camera cam;
 
 	// Render
 
@@ -158,17 +157,20 @@ focal_length);
 	{
 		for (int i = 0; i < image_width; i++)
 		{
-			auto u = double(i) / (image_width-1); 
-            auto v = double(j) / (image_height-1); 
-            ray r(origin, lower_left_corner + u*horizontal + v*vertical - 
-origin); 
-            color pixel_color = ray_color(r, world);
-			write_color(i, j, pixel_color);
+			color pixel_color(0, 0, 0);
+            for (int s = 0; s < samples_per_pixel; ++s) {
+                auto u = (i + random_double()) / (image_width-1);
+                auto v = (j + random_double()) / (image_height-1);
+                ray r = cam.get_ray(u, v);
+                pixel_color += ray_color(r, world);
+            }
+            write_color(i, j, pixel_color, samples_per_pixel);
 		}
 	}
 
 
 	double endFrame = clock();
+
 	double timeConsuming = static_cast<double>(endFrame - startFrame) / CLOCKS_PER_SEC;
 	std::cout << "Ray-tracing based rendering over..." << std::endl;
 	std::cout << "The rendering task took " << timeConsuming << " seconds" << std::endl;

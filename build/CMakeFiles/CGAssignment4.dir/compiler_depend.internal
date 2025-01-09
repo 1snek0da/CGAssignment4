@@ -579,4 +579,10 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h
  /root/CGAssignment4/src/ray.h
+ /root/CGAssignment4/src/rtweekend.h
+ /root/CGAssignment4/src/camera.h
+ /root/CGAssignment4/src/color.h
+ /root/CGAssignment4/src/hittable_list.h
+ /root/CGAssignment4/src/hittable.h
+ /root/CGAssignment4/src/sphere.h
 

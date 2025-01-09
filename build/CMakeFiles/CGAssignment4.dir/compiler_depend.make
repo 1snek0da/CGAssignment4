@@ -576,8 +576,20 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
-  ../src/ray.h
+  ../src/ray.h \
+  ../src/rtweekend.h \
+  ../src/camera.h \
+  ../src/color.h \
+  ../src/hittable_list.h \
+  ../src/hittable.h \
+  ../src/sphere.h
 
+
+../src/hittable.h:
+
+../src/color.h:
+
+../src/camera.h:
 
 ../src/ray.h:
 
@@ -787,6 +799,8 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
+../src/sphere.h:
+
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/c++/11/ext/numeric_traits.h:
@@ -851,6 +865,8 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
 
+../src/rtweekend.h:
+
 /usr/include/alloca.h:
 
 ../include/SDL2/SDL_assert.h:
@@ -914,6 +930,8 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
 ../include/SDL2/SDL_filesystem.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+../src/hittable_list.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
