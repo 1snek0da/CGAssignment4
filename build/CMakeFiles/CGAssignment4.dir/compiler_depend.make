@@ -496,6 +496,8 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
+  ../include/external/stb_image.h \
+  /usr/include/c++/11/stdlib.h \
   ../src/rtweekend.h \
   /usr/include/c++/11/cmath \
   /usr/include/math.h \
@@ -543,7 +545,6 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
-  /usr/include/c++/11/stdlib.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
   ../include/SDL2/SDL_events.h \
   ../include/SDL2/SDL_video.h \
@@ -584,9 +585,26 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
   ../src/ray.h \
   ../src/aabb.h \
   ../src/sphere.h \
+  ../src/perlin.h \
+  ../src/texture.h \
+  ../src/rtw_stb_image.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/c++/11/math.h \
+  /usr/include/assert.h \
   ../src/camera.h \
   ../src/material.h \
-  ../src/texture.h \
   ../src/moving_sphere.h
 
 
@@ -596,11 +614,33 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
 
 ../src/camera.h:
 
+/usr/include/assert.h:
+
+/usr/include/c++/11/math.h:
+
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
+
+/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
+
+/usr/include/strings.h:
+
+../src/rtw_stb_image.h:
+
+../src/perlin.h:
+
 ../src/aabb.h:
 
 ../src/ray.h:
 
 ../src/hittable.h:
+
+../include/external/stb_image.h:
 
 /usr/include/c++/11/bits/parse_numbers.h:
 
@@ -764,6 +804,8 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
 
 ../include/SDL2/SDL_render.h:
 
+/usr/include/string.h:
+
 /usr/include/c++/11/bits/streambuf.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
@@ -804,6 +846,8 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+
 ../include/SDL2/SDL_loadso.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
@@ -835,6 +879,8 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
 ../src/WindowsApp.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
+
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
 /usr/include/c++/11/string:
 
@@ -924,6 +970,8 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/c++/11/bits/postypes.h:
 
+/usr/include/linux/limits.h:
+
 /usr/include/c++/11/bits/basic_string.h:
 
 /usr/include/c++/11/bits/shared_ptr_base.h:
@@ -987,6 +1035,8 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
 
 /usr/include/features-time64.h:
 
@@ -1196,8 +1246,12 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/c++/11/bits/vector.tcc:
 
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
+
 /usr/include/c++/11/memory:
 
 /usr/include/c++/11/bits/stl_raw_storage_iter.h:
+
+/usr/include/limits.h:
 
 /usr/include/c++/11/bits/stl_relops.h:

@@ -1,8 +1,11 @@
 #ifndef SPHERE_H 
 #define SPHERE_H 
  
+
+#include "perlin.h"
 #include "hittable.h" 
 #include "vec3.h" 
+#include "texture.h"
  
 class sphere : public hittable { 
     public: 
@@ -37,6 +40,19 @@ class sphere : public hittable {
             v = theta / pi; 
         } 
 }; 
+
+// class noise_texture : public texture { 
+//     public: 
+//         noise_texture() {} 
+//         noise_texture(double sc) : scale(sc) {}
+
+//         virtual color value(double u, double v, const point3& p) const override { 
+//             return color(1,1,1) * noise.noise(p); 
+//         } 
+ 
+//     public: 
+//         perlin noise; 
+// };
 
 bool sphere::bounding_box(double time0, double time1, aabb& output_box) const { 
     output_box = aabb( 
