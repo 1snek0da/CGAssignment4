@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/CGAssignment4.dir/src/WindowsApp.cpp.o CMakeFiles/CGAssignment4.dir/src/main.cpp.o -o CGAssignment4  -lSDL2 -lSDL2main -lpthread 
