@@ -496,6 +496,9 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/mutex \
+  /usr/include/c++/11/bits/std_mutex.h \
+  /usr/include/c++/11/bits/unique_lock.h \
   ../src/WindowsApp.h \
   ../include/SDL2/SDL.h \
   ../include/SDL2/SDL_main.h \
@@ -597,6 +600,8 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
 ../src/camera.h:
 
 ../src/ray.h:
+
+/usr/include/c++/11/bits/std_mutex.h:
 
 /usr/include/c++/11/bits/parse_numbers.h:
 
@@ -706,6 +711,8 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h:
 
+/usr/include/c++/11/mutex:
+
 ../include/SDL2/SDL_surface.h:
 
 ../include/SDL2/SDL_mouse.h:
@@ -811,6 +818,8 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/c++/11/ext/numeric_traits.h:
 
 ../include/SDL2/SDL_joystick.h:
+
+/usr/include/c++/11/bits/unique_lock.h:
 
 /usr/include/c++/11/bits/uses_allocator.h:
 
