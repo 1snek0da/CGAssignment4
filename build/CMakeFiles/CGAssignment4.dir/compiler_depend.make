@@ -581,15 +581,18 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
   ../src/rtweekend.h \
   ../src/ray.h \
   ../src/camera.h \
+  ../src/material.h \
+  ../src/hittable.h \
   ../src/color.h \
   ../src/hittable_list.h \
-  ../src/hittable.h \
   ../src/sphere.h
 
 
+../src/color.h:
+
 ../src/hittable.h:
 
-../src/color.h:
+../src/material.h:
 
 ../src/camera.h:
 
