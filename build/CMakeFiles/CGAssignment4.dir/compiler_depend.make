@@ -605,8 +605,11 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/assert.h \
   ../src/camera.h \
   ../src/material.h \
-  ../src/moving_sphere.h
+  ../src/moving_sphere.h \
+  ../src/aarect.h
 
+
+../src/aarect.h:
 
 ../src/moving_sphere.h:
 

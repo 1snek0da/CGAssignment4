@@ -258,4 +258,4 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/c++/11/math.h \
  /usr/include/assert.h /root/CGAssignment4/src/camera.h \
  /root/CGAssignment4/src/material.h \
- /root/CGAssignment4/src/moving_sphere.h
+ /root/CGAssignment4/src/moving_sphere.h /root/CGAssignment4/src/aarect.h
