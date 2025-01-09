@@ -496,9 +496,32 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
-  /usr/include/c++/11/mutex \
-  /usr/include/c++/11/bits/std_mutex.h \
-  /usr/include/c++/11/bits/unique_lock.h \
+  ../src/rtweekend.h \
+  /usr/include/c++/11/cmath \
+  /usr/include/math.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/11/memory \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/11/bits/align.h \
+  /usr/include/c++/11/bit \
+  /usr/include/c++/11/bits/shared_ptr.h \
+  /usr/include/c++/11/bits/shared_ptr_base.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/ext/concurrence.h \
+  /usr/include/c++/11/bits/shared_ptr_atomic.h \
+  /usr/include/c++/11/bits/atomic_base.h \
+  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/11/backward/auto_ptr.h \
   ../src/WindowsApp.h \
   ../include/SDL2/SDL.h \
   ../include/SDL2/SDL_main.h \
@@ -555,53 +578,29 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
   ../include/SDL2/SDL_misc.h \
   /usr/include/c++/11/sstream \
   /usr/include/c++/11/bits/sstream.tcc \
-  /usr/include/c++/11/memory \
-  /usr/include/c++/11/bits/stl_tempbuf.h \
-  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/11/bits/align.h \
-  /usr/include/c++/11/bit \
-  /usr/include/c++/11/bits/shared_ptr.h \
-  /usr/include/c++/11/bits/shared_ptr_base.h \
-  /usr/include/c++/11/bits/allocated_ptr.h \
-  /usr/include/c++/11/ext/aligned_buffer.h \
-  /usr/include/c++/11/ext/concurrence.h \
-  /usr/include/c++/11/bits/shared_ptr_atomic.h \
-  /usr/include/c++/11/bits/atomic_base.h \
-  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/11/backward/auto_ptr.h \
   ../src/vec3.h \
-  /usr/include/c++/11/cmath \
-  /usr/include/math.h \
-  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
-  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
-  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
-  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
-  ../src/rtweekend.h \
+  ../src/hittable_list.h \
+  ../src/hittable.h \
   ../src/ray.h \
+  ../src/aabb.h \
+  ../src/sphere.h \
   ../src/camera.h \
   ../src/material.h \
-  ../src/hittable.h \
-  ../src/color.h \
-  ../src/hittable_list.h \
-  ../src/sphere.h
+  ../src/texture.h \
+  ../src/moving_sphere.h
 
 
-../src/color.h:
-
-../src/hittable.h:
+../src/moving_sphere.h:
 
 ../src/material.h:
 
 ../src/camera.h:
 
+../src/aabb.h:
+
 ../src/ray.h:
 
-/usr/include/c++/11/bits/std_mutex.h:
+../src/hittable.h:
 
 /usr/include/c++/11/bits/parse_numbers.h:
 
@@ -711,8 +710,6 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h:
 
-/usr/include/c++/11/mutex:
-
 ../include/SDL2/SDL_surface.h:
 
 ../include/SDL2/SDL_mouse.h:
@@ -818,8 +815,6 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/c++/11/ext/numeric_traits.h:
 
 ../include/SDL2/SDL_joystick.h:
-
-/usr/include/c++/11/bits/unique_lock.h:
 
 /usr/include/c++/11/bits/uses_allocator.h:
 
@@ -1072,6 +1067,8 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/c++/11/iosfwd:
 
 /usr/include/c++/11/initializer_list:
+
+../src/texture.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
