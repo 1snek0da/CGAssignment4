@@ -162,10 +162,9 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /root/CGAssignment4/include/external/stb_image.h \
- /usr/include/c++/11/stdlib.h /root/CGAssignment4/src/rtweekend.h \
- /usr/include/c++/11/cmath /usr/include/math.h \
- /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /root/CGAssignment4/src/constant_medium.h \
+ /root/CGAssignment4/src/rtweekend.h /usr/include/c++/11/cmath \
+ /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
@@ -186,6 +185,28 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h \
+ /root/CGAssignment4/src/hittable.h /root/CGAssignment4/src/ray.h \
+ /root/CGAssignment4/src/vec3.h /root/CGAssignment4/src/aabb.h \
+ /root/CGAssignment4/src/material.h /root/CGAssignment4/src/texture.h \
+ /root/CGAssignment4/src/perlin.h /root/CGAssignment4/src/rtw_stb_image.h \
+ /root/CGAssignment4/include/external/stb_image.h \
+ /usr/include/c++/11/stdlib.h /usr/include/string.h \
+ /usr/include/strings.h \
+ /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+ /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/c++/11/math.h \
+ /usr/include/assert.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
  /root/CGAssignment4/src/WindowsApp.h \
  /root/CGAssignment4/include/SDL2/SDL.h \
  /root/CGAssignment4/include/SDL2/SDL_main.h \
@@ -204,10 +225,6 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: \
  /root/CGAssignment4/include/SDL2/SDL_rwops.h \
  /root/CGAssignment4/include/SDL2/SDL_clipboard.h \
  /root/CGAssignment4/include/SDL2/SDL_cpuinfo.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
  /root/CGAssignment4/include/SDL2/SDL_events.h \
  /root/CGAssignment4/include/SDL2/SDL_video.h \
  /root/CGAssignment4/include/SDL2/SDL_pixels.h \
@@ -239,23 +256,12 @@ CMakeFiles/CGAssignment4.dir/src/main.cpp.o: \
  /root/CGAssignment4/include/SDL2/SDL_version.h \
  /root/CGAssignment4/include/SDL2/SDL_locale.h \
  /root/CGAssignment4/include/SDL2/SDL_misc.h /usr/include/c++/11/sstream \
- /usr/include/c++/11/bits/sstream.tcc /root/CGAssignment4/src/vec3.h \
- /root/CGAssignment4/src/hittable_list.h \
- /root/CGAssignment4/src/hittable.h /root/CGAssignment4/src/ray.h \
- /root/CGAssignment4/src/aabb.h /root/CGAssignment4/src/sphere.h \
- /root/CGAssignment4/src/perlin.h /root/CGAssignment4/src/texture.h \
- /root/CGAssignment4/src/rtw_stb_image.h /usr/include/string.h \
- /usr/include/strings.h \
- /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
- /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
- /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
- /usr/include/x86_64-linux-gnu/bits/local_lim.h \
- /usr/include/linux/limits.h \
- /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
- /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
- /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/c++/11/math.h \
- /usr/include/assert.h /root/CGAssignment4/src/camera.h \
- /root/CGAssignment4/src/material.h \
- /root/CGAssignment4/src/moving_sphere.h /root/CGAssignment4/src/aarect.h
+ /usr/include/c++/11/bits/sstream.tcc \
+ /root/CGAssignment4/src/hittable_list.h /root/CGAssignment4/src/sphere.h \
+ /root/CGAssignment4/src/camera.h /root/CGAssignment4/src/moving_sphere.h \
+ /root/CGAssignment4/src/aarect.h /root/CGAssignment4/src/box.h \
+ /root/CGAssignment4/src/bvh.h /usr/include/c++/11/algorithm \
+ /usr/include/c++/11/bits/stl_algo.h \
+ /usr/include/c++/11/bits/algorithmfwd.h \
+ /usr/include/c++/11/bits/stl_heap.h \
+ /usr/include/c++/11/bits/uniform_int_dist.h
